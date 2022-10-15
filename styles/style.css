@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+header{
+    margin-bottom: 2rem;
+    background-color: rgb(244, 244, 227);
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.25);
+}
+
+footer{
+    margin-top: auto;
+    background-color: rgb(244, 244, 227);
+}
+
+header p, footer p{
+    margin: 20px;
+}
+
+header span, footer span{
+    font-weight:bolder;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+ul{
+    background-color: beige;
+    padding: 20px;
+    margin-bottom: 1rem;
+}
+
+li{
+    font-weight: bold;
+    list-style-type:circle;
+}
+
+#contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    transition: 200ms;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.25);
+
+}
+.tarjeta img{
+    margin-bottom: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.tarjeta p{
+    margin-bottom: unset;
+}
+
+.tarjeta div{
+    background-color: beige;
+    padding: 20px;
+}
+
+.tarjeta:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
